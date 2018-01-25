@@ -1,3 +1,22 @@
+
+ionic - android更改系统字体大小，显示混乱
+方法：
+
+angular.module('app').controller('IndexController', function ($ionicPlatform, $window) {
+
+          $ionicPlatform.ready(function(){
+
+          if($window.MobileAccessibility){
+
+                 $window.MobileAccessibility.usePreferredTextZoom(false);
+
+          }
+
+        });
+
+});
+
+
 # phonegap-plugin-mobile-accessibility
 ==========================================
 
